@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends git unzip && rm
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /app
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --no-scripts --no-interaction --prefer-dist
+RUN composer install --no-scripts --no-interaction --prefer-dist
 COPY . .
 COPY --from=assets /app/public/build public/build
 RUN sed -i 's#^        //$#        $middleware->trustProxies(at: "*");#' bootstrap/app.php && composer dump-autoload --optimize && php artisan package:discover
