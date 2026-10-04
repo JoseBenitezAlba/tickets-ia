@@ -4,6 +4,8 @@
 ![PHP](https://img.shields.io/badge/PHP-8.4-777BB4?logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?logo=laravel&logoColor=white)
 
+**Demo:** https://tickets-ia-izjq.onrender.com (por ejemplo `GET /api/tickets`). Está en el plan gratuito de Render: si lleva un rato sin usarse, la primera petición tarda cerca de un minuto. Los datos se reinician en cada arranque.
+
 Asistente de soporte con IA hecho con **Laravel 13** y **Groq**. Recibe tickets de clientes y, con un endpoint, la IA devuelve un resumen, la categoría, la prioridad y un borrador de respuesta.
 
 ## Cómo funciona
