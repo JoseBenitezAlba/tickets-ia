@@ -32,6 +32,8 @@ php artisan migrate
 php artisan serve
 ```
 
+En Render (o en cualquier hosting) el archivo `.env` no se sube a GitHub, así que hay que definir la variable de entorno `GROQ_API_KEY` en el panel del servicio (Environment). Sin ella, el análisis con IA responde con error.
+
 ## Endpoints
 
 | Método | Ruta | Descripción |
